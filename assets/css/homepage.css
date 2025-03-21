@@ -1,0 +1,63 @@
+@import url(../../index.css);
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+}
+
+.activity-card {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+}
+
+.activity-card .activity-thumbnail {
+    grid: 1 / 1;
+}
+
+.activity-thumbnail img {
+    aspect-ratio: 1;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.activity-info {
+    grid: 2 / 2;
+    justify-self: start;
+    padding: 0 1rem;
+}
+
+.recommendations {
+    padding: 0.4rem 0;
+}
+
+.recommendations .scrollable {
+    padding: 0.2rem 1rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.recommendation-card {
+    scroll-snap-align: start;
+    padding: 0 0 0 1rem;
+}
+
+.recommendations img {
+    aspect-ratio: 16 / 9;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}

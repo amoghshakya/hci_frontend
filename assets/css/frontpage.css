@@ -1,0 +1,36 @@
+@import url(../../index.css);
+
+.banner {
+    position: relative;
+    margin: 0 auto 1rem auto;
+}
+
+.banner > h1 {
+    color: var(--background);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 82%;
+}
+
+.login-buttons {
+    gap: 0.5rem;
+    margin: auto;
+    width: 95%;
+}
+
+.login-buttons > .button {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.discount-banner {
+    padding: 1rem;
+    margin: 0.8rem auto;
+    align-content: center;
+    gap: 1rem;
+    justify-content: space-between;
+}

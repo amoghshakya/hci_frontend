@@ -1,0 +1,93 @@
+/* Mobile First */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --text: #2b3d50;
+    --background: #f4f6f6;
+    --primary: #2ecc70;
+    --secondary: #1abc9c;
+    --accent: #f1c40e;
+    background-color: var(--background);
+    /* color: var(--text); */
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.accent {
+    background-color: var(--accent);
+}
+
+.navbar_wrapper {
+    position: absolute;
+    bottom: 0;
+}
+
+.button {
+    border: none;
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar > img {
+    aspect-ratio: 1;
+    width: 24px;
+}
+
+input[type="text"], input[type="password"] {
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+}
+
+input:focus, input:focus-visible, button:focus, button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 2px;
+}
