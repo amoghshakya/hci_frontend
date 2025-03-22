@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/map.css">
+        <title>Evo: A Charging Station Map</title>
+    </head>
+    <body class="relative">
+        <nav class="navbar_wrapper">
+            <div class="navbar">
+                <img
+                    src="assets/svgs/outline/home.svg"
+                    alt="Home Icon"
+                    id="home"
+                >
+                <img
+                    src="assets/svgs/outline/magnifying-glass.svg"
+                    alt="Search Icon"
+                    id="magnifying-glass"
+                >
+                <img src="assets/svgs/solid/map.svg" alt="Map Icon" id="map">
+                <img
+                    src="assets/svgs/outline/bell.svg"
+                    alt="Notifications Icon"
+                    id="bell"
+                >
+                <img
+                    src="assets/svgs/outline/user-circle.svg"
+                    alt="Profile Icon"
+                    id="user-circle"
+                >
+            </div>
+        </nav>
+
+        <main class="map">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+            <img src="assets/svgs/solid/pin.svg" alt="Pin">
+        </main>
+
+        <div class="floating-icons">
+            <div class="circle">
+                <img
+                    src="assets/svgs/outline/navigation.svg"
+                    alt="navigation icon"
+                >
+            </div>
+            <div class="circle" id="explore">
+                <img
+                    src="assets/svgs/outline/compass.svg"
+                    alt="navigation icon"
+                >
+            </div>
+        </div>
+
+        <div class="explore-stations">
+            <div class="header flex">
+                <h3>Nearby Stations</h3>
+                <img
+                    src="assets/svgs/outline/chevron-down.svg"
+                    alt="Close"
+                    id="close"
+                    width="24px"
+                >
+            </div>
+
+            <div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Hyundai Showroom, Thapathali</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>BYD Showroom, Kathmandu</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Pulchowk, Lalitpur</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Balkhu, Kathmandu</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Jawalakhel, Lalitpur</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Kalimati, Kathmandu</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Kalimati, Kathmandu</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Kalimati, Kathmandu</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="./assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div style="width: fit-content">
+                            <a
+                                href="#"
+                                class="circle"
+                                style="border: 2px solid var(--primary)"
+                            >
+                                <img
+                                    src="assets/svgs/outline/chevron-right.svg"
+                                    alt="Go to Station"
+                                    width="16px"
+                                >
+                            </a>
+                        </div>
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js" defer></script>
+        <script src="assets/js/map.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/station.css">
+        <title>Evo: A Charging Station Map</title>
+    </head>
+    <body>
+        <nav class="container flex header">
+            <a
+                href="/map.html"
+                class="circle"
+                style="border: 2px solid var(--primary)"
+            >
+                <img
+                    src="../assets/svgs/outline/chevron-left.svg"
+                    alt="Back"
+                    width="24px"
+                >
+            </a>
+            <h3>Station Info</h3>
+            <div style="width: 10%"></div>
+        </nav>
+
+        <main>
+            <div class="thumbnail">
+                <img
+                    src="../assets/images/charging_station_.png"
+                    alt="Charging Station"
+                >
+            </div>
+
+            <section class="container">
+                <div class="favorite-card">
+                    <div class="station-info">
+                        <h4>Pulchowk, Lalitpur</h4>
+                        <div class="flex rating">
+                            <div class="flex rating-stars">
+                                <span>4.5</span>
+                                <div class="flex stars">
+                                    <img
+                                        src="../assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="../assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="../assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="../assets/svgs/solid/star.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                    <img
+                                        src="../assets/svgs/solid/star-half.svg"
+                                        alt="Star Icon"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <span>(120)</span>
+                        </div>
+                        <div>
+                            <span
+                                style="color: var(--primary); font-weight: 600"
+                            >
+                                Open
+                            </span> &gt; Closes 10PM
+                        </div>
+                    </div>
+                    <div class="favorite-actions">
+                        <div class="center">
+                            <p style="color: var(--primary); font-weight: 600">
+                                &#8360;80/hr
+                            </p>
+                            <p style="font-size: small">
+                                5 ports
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="button accent">Get Directions</button>
+                    <button class="button accent">Start</button>
+                </div>
+
+                <button
+                    class="primary button"
+                    onclick="window.location.href = '/pages/book_form.html'"
+                >
+                    Book now
+                </button>
+            </section>
+        </main>
+    </body>
+</html>

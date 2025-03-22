@@ -11,3 +11,7 @@ homeIcon.addEventListener("click", () => {
 searchIcon.addEventListener("click", () => {
     window.location.href = "/search.html";
 });
+
+mapIcon.addEventListener("click", () => {
+    window.location.href = "/map.html";
+});

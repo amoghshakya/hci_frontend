@@ -1,17 +1,11 @@
 @import url(../../index.css);
 
-.header {
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.4rem;
 }
-
 
 .recommendations {
     padding: 0.4rem 0;
