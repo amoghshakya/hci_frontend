@@ -15,11 +15,15 @@
     --secondary: #1abc9c;
     --accent: #f1c40e;
     background-color: var(--background);
-    /* color: var(--text); */
+    color: var(--text);
 }
 
 .flex {
     display: flex;
+}
+
+.relative {
+    position: relative;
 }
 
 .center {
@@ -39,8 +43,10 @@
 }
 
 .navbar_wrapper {
-    position: absolute;
+    background-color: var(--background);
+    position: fixed;
     bottom: 0;
+    left: 0;
 }
 
 .button {
@@ -90,4 +96,32 @@ a:hover {
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 2px;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.activity-card {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+}
+
+.activity-card .activity-thumbnail {
+    grid: 1 / 1;
+}
+
+.activity-thumbnail img {
+    aspect-ratio: 1;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.activity-info {
+    grid: 2 / 2;
+    justify-self: start;
+    padding: 0 1rem;
 }

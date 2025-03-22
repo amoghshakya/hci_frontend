@@ -1,0 +1,38 @@
+@import url(../../index.css);
+
+img#search, img#microphone {
+    position: absolute;
+}
+
+img#search {
+    left: 3%;
+    top: 25%;
+}
+
+img#microphone {
+    right: 3%;
+    bottom: 30%;
+}
+
+input#search {
+    width: 100%;
+    padding: 1rem 2.8rem;
+    border-radius: 0;
+}
+
+div#spinner {
+    padding: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

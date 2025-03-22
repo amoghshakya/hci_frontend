@@ -1,0 +1,39 @@
+@import url(../../index.css);
+
+a.circle svg {
+    width: 24px;
+    stroke: var(--primary);
+}
+
+.map-thumbnail {
+    margin: 1rem;
+}
+
+.map-thumbnail img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.rating {
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.rating-stars {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.booking-info {
+    padding: 1rem 1.4rem;
+}
+
+.booking-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}

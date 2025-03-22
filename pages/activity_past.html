@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/activity.css">
+        <title>Evo: A Charging Station Map</title>
+    </head>
+    <body class="relative">
+        <nav class="navbar_wrapper">
+            <div class="navbar">
+                <img
+                    src="../assets/svgs/solid/home.svg"
+                    alt="Home Icon"
+                    id="home"
+                >
+                <img
+                    src="../assets/svgs/outline/magnifying-glass.svg"
+                    alt="Search Icon"
+                    id="magnifying-glass"
+                >
+                <img
+                    src="../assets/svgs/outline/map.svg"
+                    alt="Map Icon"
+                    id="map"
+                >
+                <img
+                    src="../assets/svgs/outline/bell.svg"
+                    alt="Notifications Icon"
+                    id="bell"
+                >
+                <img
+                    src="../assets/svgs/outline/user-circle.svg"
+                    alt="Profile Icon"
+                    id="user-circle"
+                >
+            </div>
+        </nav>
+
+        <div
+            class="flex"
+            style="align-items: center; justify-content: space-between; padding: 1rem"
+        >
+            <div class="flex" style="align-items: center; gap: 4px">
+                <a
+                    href="../index.html"
+                    class="circle"
+                    style="border: 2px solid var(--primary)"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5 8.25 12l7.5-7.5"
+                        />
+                    </svg>
+                </a>
+                <span style="font-size: small">Back</span>
+            </div>
+
+            <h3>Activity</h3>
+
+            <div style="width: 20%"></div>
+        </div>
+
+        <div class="tabs">
+            <a href="activity.html" class="button">Upcoming</a>
+            <a href="#" class="button primary">Past</a>
+        </div>
+
+        <div class="activities">
+            <div class="activity-card">
+                <div class="activity-thumbnail">
+                    <img
+                        src="../assets/images/charging_station.png"
+                        alt="Charging Station"
+                    >
+                </div>
+                <div class="activity-info">
+                    <h4>Balkhu, Kathmandu</h4>
+                    <p>Thu, Dec 3 - 3PM, 1 hour</p>
+                </div>
+                <div class="activity-actions">
+                    <span style="color: var(--primary); font-size: small">
+                        &#8360;80 Paid
+                    </span>
+                </div>
+            </div>
+            <div class="activity-card">
+                <div class="activity-thumbnail">
+                    <img
+                        src="../assets/images/charging_station.png"
+                        alt="Charging Station"
+                    >
+                </div>
+                <div class="activity-info">
+                    <h4>Balkhu, Kathmandu</h4>
+                    <p>Thu, Dec 1 - 12PM, 2 hour</p>
+                </div>
+                <div class="activity-actions">
+                    <span style="color: var(--primary); font-size: small">
+                        &#8360;160 Paid
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compensate for the navbar -->
+        <div style="padding: 1rem"></div>
+    </body>
+</html>
