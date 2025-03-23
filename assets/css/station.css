@@ -1,7 +1,60 @@
 @import url(./homepage.css);
+@import url(../../index.css);
 
 .thumbnail img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.actions button {
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.tabs .tab {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    background-color: #f0f0f0;
+}
+
+/* Has the tab class and active class */
+.tabs .tab.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img#user {
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rating-stars {
+    gap: 0.2rem;
+}
+
+.rating-stars img {
+    width: 16px;
 }

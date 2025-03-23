@@ -71,7 +71,7 @@
     width: 24px;
 }
 
-input, select {
+input, select, textarea {
     outline: none;
     border: none;
     border-radius: 8px;
@@ -81,6 +81,8 @@ input, select {
 
 input:focus,
 input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
 button:focus,
 button:focus-visible,
 select:focus,
@@ -141,4 +143,12 @@ a:hover {
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.items-center {
+    align-items: center;
 }

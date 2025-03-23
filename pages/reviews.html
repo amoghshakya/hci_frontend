@@ -128,56 +128,97 @@
                 </div>
 
                 <div class="tabs">
-                    <a href="#" class="tab active">Overview</a>
-                    <a href="/pages/reviews.html" class="tab">Reviews</a>
+                    <a href="/pages/station.html" class="tab">Overview</a>
+                    <a href="#" class="tab active">Reviews</a>
                     <a href="#" class="tab">About</a>
                 </div>
+            </section>
 
-                <div
-                    class="flex"
-                    style="flex-direction: column; gap: 1rem; margin: 1rem 0"
-                >
-                    <div class="flex header">
-                        <p style="font-size: small">
-                            Charging Speed &gt; <span
-                                style="color: var(--primary)"
-                            >Fast</span>
-                        </p>
-                        <p style="font-size: small">
-                            5 Ports ~ <span style="color: var(--primary)"
-                            >3/5 Available &#709;</span>
-                        </p>
+            <section class="container">
+                <div class="review-card">
+                    <div class="flex items-center" style="gap: 0.5rem">
+                        <img
+                            src="/assets/images/dog.jpeg"
+                            alt="User"
+                            id="user"
+                        >
+                        <p style="font-weight: 600">Sumit Shrestha</p>
                     </div>
-                    <div class="flex header">
-                        <p style="font-size: small">
-                            Payment Methods &gt;
-                            <span style="color: var(--primary)">
-                                Cash, FonePay, ConnectIPS, eSewa
-                            </span>
-                        </p>
-                    </div>
-                    <div class="flex header">
-                        <div class="flex header" style="gap: 0.5rem">
-                            <img
-                                src="/assets/svgs/solid/pin.svg"
-                                alt="location"
-                            >
-                            <p style="font-size: small">
-                                Kathmandu Pulchowk Gabahal Rd, Lalitpur
-                            </p>
+                    <div class="flex rating">
+                        <div class="flex rating-stars">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
                         </div>
+                    </div>
+                    <div class="feedback">
+                        <p>
+                            Great location, friendly staff, and good service.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="flex items-center" style="gap: 0.5rem">
+                        <img
+                            src="/assets/images/sanumaya.png"
+                            alt="User"
+                            id="user"
+                        >
+                        <p style="font-weight: 600">Priyanka Badal</p>
+                    </div>
+                    <div class="flex rating">
+                        <div class="flex rating-stars">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img src="/assets/svgs/solid/star.svg" alt="star">
+                            <img
+                                src="/assets/svgs/solid/star-half.svg"
+                                alt="star"
+                            >
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <p>
+                            The charging station is well maintained and the
+                            staff is very helpful. The cafe nearby is a plus.
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <section class="flex space-around">
-                <button
-                    class="primary button"
-                    style="width: 50%"
-                    onclick="window.location.href = '/pages/book_form.html'"
-                >
-                    Book now
-                </button>
+            <section class="container">
+                <h4>Rate and Review</h4>
+
+                <div class="flex" style="flex-direction: column; gap: 1rem">
+                    <div class="flex items-center" style="gap: 0.5rem">
+                        <img
+                            src="/assets/images/dog.jpeg"
+                            alt="User"
+                            id="user"
+                            width="36px"
+                            style="border-radius: 50%"
+                        >
+                        <div>
+                            <div class="flex rating" id="rating">
+                                <div class="flex rating-stars"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea
+                            placeholder="Leave a review..."
+                            style="width: 100%"
+                        ></textarea>
+                        <div class="flex space-around">
+                            <button class="button primary" style="width: 80%">
+                                Post Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -185,5 +226,27 @@
         <div style="padding: 2rem"></div>
 
         <script src="/index.js" defer></script>
+        <script>
+            const rating = document.getElementById("rating");
+            for (let i = 0; i < 5; i++) {
+                const star = document.createElement("img");
+                star.src = "/assets/svgs/outline/star.svg";
+                star.alt = "Star";
+                star.width = 24;
+                star.style.cursor = "pointer";
+                star.addEventListener("click", () => {
+                    for (let j = 0; j < 5; j++) {
+                        if (j <= i) {
+                            rating.children[j].src =
+                                "/assets/svgs/solid/star.svg";
+                        } else {
+                            rating.children[j].src =
+                                "/assets/svgs/outline/star.svg";
+                        }
+                    }
+                });
+                rating.appendChild(star);
+            }
+        </script>
     </body>
 </html>
