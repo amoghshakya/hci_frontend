@@ -1,0 +1,448 @@
+@import url(/index.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f3f4f6;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-container {
+    background-color: white;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.875rem;
+    max-width: 4000px;
+    border-radius: 0.5rem;
+  }
+  
+  /* Status Bar */
+  .status-bar {
+    align-self: center;
+    display: flex;
+    width: 336px;
+    max-width: 100%;
+    align-items: stretch;
+    gap: 1.25rem;
+    overflow: hidden;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: -0.32px;
+    line-height: 1;
+    justify-content: space-between;
+    padding-left: 11px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .time {
+    z-index: 10;
+    padding-top: -2px;
+    padding-bottom: 0.125rem;
+    border-radius: 1.5rem;
+  }
+  
+  .status-icons {
+    aspect-ratio: 5.92;
+    object-fit: contain;
+    width: 77px;
+    flex-shrink: 0;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    width: 100%;
+    font-size: 1.25rem;
+    color: #1e293b;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+  
+  .header-content {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(242, 244, 247, 1);
+  }
+  
+  .header-title {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 12px;
+    text-align: center;
+  
+
+  }
+  
+  
+  /* User Profile Section */
+  .user-profile {
+    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.06);
+    background-color: #2ECC70;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 40px 61px;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 1px;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: stretch;
+    gap: 9px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    
+  }
+  
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 1;
+    width: 72px;
+    padding-top: 0.75rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    
+  }
+  
+  .avatar-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    inset: 0;
+    padding-top: 10px;
+  }
+  
+  .avatar {
+    aspect-ratio: 1.08;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .user-details {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: stretch;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .user-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    
+  }
+  
+  .user-email {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: 5px;
+  }
+  
+  .edit-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 9999px;
+    padding: 0;
+  }
+  
+  .edit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(46, 204, 112, 0.5);
+  }
+  
+  .edit-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 1.5rem;
+    flex-shrink: 0;
+    padding-left: auto;
+
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  /* Account Settings Section */
+  .account-settings {
+    align-items: stretch;
+    background-color: #ffffff;
+    z-index: 10;
+    display: flex;
+    margin-top:2px;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 2.5rem;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 5px;
+    
+    
+  }
+  
+  .settings-container {
+    background-color: white;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.06);
+    padding-top: 18px;
+    padding-bottom: 75px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+  }
+  
+  .settings-list {
+    height: 179px;
+    width: 100%;
+  }
+  
+  .setting-item {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 1.25rem;
+    justify-content: space-between;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  
+  .setting-item:first-child {
+    margin-top: 0;
+  }
+  
+  .setting-left {
+    display: flex;
+    align-items: stretch;
+    gap: 17px;
+  }
+  
+  .setting-icon {
+    flex-shrink: 0;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+  }
+  
+  .circle {
+    background-color: #f0eeee;
+  }
+  
+
+
+  .grey-circle {
+    background-color: rgba(85, 85, 85, 0.05);
+  }
+  
+  .setting-text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .offset-text {
+    margin-left: 3.5rem;
+  }
+  
+  .setting-title {
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 5px;
+  }
+  
+  .setting-description {
+    color: rgba(171, 171, 171, 1);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  .change-password {
+    padding-left: 3.5rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  
+  .arrow-icon {
+    aspect-ratio: 0.58;
+    object-fit: contain;
+    width: 7px;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .toggle-switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 60px;
+    background-color: #E8E8E8;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    width: 42px;
+    height: 22px;
+  }
+  
+  .toggle-knob {
+    display: flex;
+    width: 1.25rem;
+    flex-shrink: 0;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #ABABAB;
+  }
+  
+  .more-label {
+    z-index: 10;
+    margin-bottom: -27px;
+  
+    gap: 0.625rem;
+    font-size: 0.875rem;
+    color: black;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 1;
+    margin-top: 26px;
+    padding: 0.625rem;
+  }
+  
+  /* More Options Section */
+  .more-options {
+    align-items: stretch;
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 13px;
+    color: #181D27;
+    font-weight: 500;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+    border-radius: 5px;
+  }
+  
+  .options-container {
+    background-color: white;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 5px;
+  }
+  
+  .help-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 2.5rem;
+    flex-shrink: 0;
+  }
+  
+  /* Navigation Bar */
+  .navigation-bar {
+    justify-content: center;
+    align-items: stretch;
+    background-color: #F4F6F6;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 25px;
+    padding-bottom: 0.5rem;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    min-height: 55px;
+    align-items: center;
+    gap: 40px 48px;
+    overflow: hidden;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.06);
+    
+  }
+  
+  .nav-button.active {
+    opacity: 1;
+  }
+  
+  .nav-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 1.5rem;
+    align-self: stretch;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  

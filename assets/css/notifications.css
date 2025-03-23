@@ -1,0 +1,367 @@
+@import url(/index.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+  }
+  
+  body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  /* Container */
+  .notification-container {
+    display: flex;
+    justify-content: center;
+    max-width: 4000px;
+    width: 100%;
+    
+  }
+  
+ 
+  .notification-inner {
+    background-color: white;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    margin: 0 auto;
+    padding-top: 14px;
+    box-shadow: 0 2px 10px rgba(185, 184, 184, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .notification-inner {
+      border-radius: 12px;
+      margin-top: 24px;
+      padding-top: 0;
+    }
+    
+    .status-bar, .navigation-bar {
+      display: none;
+    }
+  }
+  
+ 
+  
+  /* Header */
+  .header {
+    width: 100%;
+    margin-top: 12px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+  }
+  
+  .header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    align-items: center;
+   
+    justify-content: space-between;
+    padding-left: 23px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-color: rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(241, 241, 241);
+  }
+  
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    color: #334155;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  .header-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 20px;
+    flex-shrink: 0;
+  }
+  
+  .settings-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 20px;
+  }
+  
+  /* Notification Items */
+  .notification-items {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .notification-items {
+      max-height: 70vh;
+    }
+  }
+  
+  .notification-item {
+    position: relative;
+    width: 100%;
+  }
+  
+  .notification-content {
+    background-color: white;
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    padding-left: 23px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .avatar {
+    background-color: #e2e8f0;
+    font-size: 20px;
+    color: #73839B;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+    flex-shrink: 0;
+  }
+  
+  .message-container {
+  
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    flex: 1;
+  }
+  
+  .message {
+    color: #475569;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  .bold {
+    font-weight: 600;
+  }
+  
+  .thumbnail-container {
+    
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+  
+  .thumbnail {
+    aspect-ratio: 1.5;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-top: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  .action-button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 32px;
+    padding: 6px 12px;
+    border-radius: 12px;
+  }
+  
+  .action-button.primary {
+    background-color: #2ECC70;
+    border: 1px solid #D0D5DD;
+    font-weight: 600;
+
+  }
+  
+  .action-button.secondary {
+    background-color: #F1C40E;
+    border: 1px solid #D0D5DD;
+    font-weight: 600;
+  }
+  
+  .timestamp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 24px;
+    flex-shrink: 0;
+  }
+  
+  .timestamp {
+    margin-bottom: 6px;
+  }
+  
+  .more-options {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 24px;
+  }
+  
+  .divider {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    padding-left: 84px;
+  }
+  
+  .divider:after {
+    content: "";
+    border-color: #e2e8f0;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    min-height: 1px;
+    width: 100%;
+    flex: 1;
+  }
+  
+  /* Unread indicator */
+  .notification-item.unread:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2ECC70;
+    border-radius: 50%;
+  }
+  
+  /* Navigation Bar */
+  .nav-bar {
+    margin-top: auto;
+    background-color:  #F4F6F6;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 38px;
+    min-height: 55px;
+    align-items: center;
+  }
+  
+  .nav-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-item img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .active {
+    color: #3b82f6;
+  }
+  
+  .inactive {
+    color: #6b7280;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 480px) {
+    .notification-inner {
+      width: 100%;
+      box-shadow: none;
+    }
+    
+    .action-button {
+      min-height: 30px;
+      min-width: 70px;
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+    
+    .avatar {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+    
+    .notification-content {
+      gap: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    
+    .divider {
+      padding-left: 56px;
+    }
+    
+    .notification-item.unread:before {
+      left: 6px;
+      width: 8px;
+      height: 8px;
+    }
+    
+    .message {
+      font-size: 12px;
+    }
+    
+    .timestamp-container {
+      width: 20px;
+      font-size: 10px;
+    }
+    
+    .more-options {
+      width: 20px;
+    }
+    
+    .header {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    
+    .nav-icons {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  

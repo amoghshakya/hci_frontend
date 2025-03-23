@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/update-profile.css">
+  <title>Profile Update</title>
+  
+</head>
+<body>
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-header-inner">
+        <div>Profile</div>
+      </div>
+    </div>
+    
+    <button class="back-button">
+      <a href="profile.html"><img src="/assets/svgs/left-circle.svg" 
+           class="back-arrow" alt="Back arrow">
+
+    </a>
+    <span style="padding-top: 15px;">Back</span>
+    
+    </button>
+    
+
+    <!-- Profile Form -->
+    <form class="profile-form">
+      <div class="profile-avatar-container">
+        <img src="/assets/svgs/solid/user-circle.svg" 
+             class="profile-avatar" alt="Profile avatar">
+        <div class="profile-name">Sumit Shrestha</div>
+      </div>
+
+      <div class="profile-email">Shrestha.sumit13@gmail.com</div>
+
+      <div class="form-fields">
+        <input type="text" class="form-input" placeholder="Full Name" value="Sumit Shrestha">
+        <input type="email" class="form-input" placeholder="Email Address" value="Shrestha.sumit13@gmail.com">
+        
+        <div class="phone-input-container">
+          <img src="/assets/svgs/Vector 4.svg" 
+               class="phone-divider" alt="Phone icon">
+          <input type="tel" class="phone-input" placeholder="Phone Number">
+        </div>
+      </div>
+
+      <div class="submit-button-container">
+        <button type="submit" class="submit-button">Update profile</button>
+      </div>
+    </form>
+
+    <!-- Profile Navbar -->
+    <div class="profile-navbar">
+      <nav class="nav">
+        <button class="nav-button">
+          <img src="/assets/svgs/outline/home.svg" 
+               class="nav-icon" alt="Home">
+        </button>
+        <button class="nav-button">
+          <img src="/assets/svgs/outline/magnifying-glass.svg" 
+               class="nav-icon" alt="Search">
+        </button>
+        <button class="nav-button">
+          <img src="/assets/svgs/outline/map.svg" 
+               class="nav-icon" alt="Add">
+        </button>
+        <button class="nav-button">
+          <img src="/assets/svgs/outline/bell.svg" 
+               class="nav-icon" alt="Notifications">
+        </button>
+        <button class="nav-button">
+          <img src="/assets/svgs/solid/user-circle.svg" 
+               class="nav-icon" alt="Profile">
+        </button>
+    </nav>
+    </div>
+  </div>
+
+  <script>
+    // Basic form submission handling
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.querySelector('input[type="text"]').value;
+      const email = document.querySelector('input[type="email"]').value;
+      const phone = document.querySelector('input[type="tel"]').value;
+      
+      console.log('Form submitted with data:', { name, email, phone });
+      alert('Profile updated successfully!');
+    });
+    
+    
+    
+    // Navigation item click handlers
+    document.querySelectorAll('.nav-button').forEach(function(button, index) {
+      button.addEventListener('click', function() {
+        const items = ['home', 'search', 'add', 'notifications', 'profile'];
+        console.log(`Navigation item clicked: ${items[index]}`);
+        alert(`${items[index]} button clicked`);
+      });
+    });
+  </script>
+</body>
+</html>
