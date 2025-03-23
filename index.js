@@ -15,3 +15,11 @@ searchIcon.addEventListener("click", () => {
 mapIcon.addEventListener("click", () => {
     window.location.href = "/map.html";
 });
+
+notificationIcon.addEventListener("click", () => {
+    window.location.href = "/pages/notifications.html";
+});
+
+profileIcon.addEventListener("click", () => {
+    window.location.href = "/pages/profile.html";
+});

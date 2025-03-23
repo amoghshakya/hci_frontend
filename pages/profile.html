@@ -1,168 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
-  <link rel="stylesheet" href="/assets/css/profile.css">
-</head>
-<body>
-  <div class="container">
-    <main class="profile-container">
-      
-      <!-- Profile Header -->
-      <header class="profile-header">
-        <div class="header-content">
-          <div class="header-title">
-            <h1>Profile</h1>
-          </div>
-        </div>
-      </header>
-      
-      <!-- User Profile Section -->
-      <section class="user-profile">
-        <div class="user-info">
-          <div class="avatar-container">
-            <img src="/assets/svgs/solid/user-circle.svg" class="avatar-bg" alt="Profile background" />
-           
-          </div>
-          <div class="user-details">
-            <div class="user-name">Sumit Shrestha</div>
-            <div class="user-email">Shrestha.sumit13@gmail.com</div>
-          </div>
-        </div>
-        <button class="edit-button" aria-label="Edit profile">
-          <a href="update-profile.html"><img src="/assets/svgs/edit icon.svg" class="edit-icon" alt="Edit profile">
-          </a>
-        </button>
-      </section>
-      
-      <!-- Account Settings Section -->
-      <section class="account-settings">
-        <div class="settings-container">
-          <div class="settings-list">
-            <!-- My Account -->
-            <div class="setting-item">
-              <div class="setting-left">
-                <div class="setting-icon circle">
-                  <img src="/assets/svgs/profile1.svg" class="profile-icon"> 
-                </div>
-                <div class="setting-text">
-                  <div class="setting-title">My Account</div>
-                  <div class="setting-description">Make changes to your account</div>
-                </div>
-              </div>
-              <img src="/assets/svgs/right chevron.svg" class="arrow-icon" alt="Right arrow" />
-            </div>
-            
-            <!-- Face ID / Touch ID -->
-            <div class="setting-item">
-              <div class="setting-left">
-                <div class="setting-icon circle">
-                  <img src="/assets/svgs/Lock.svg" class="lock-icon"> 
-                </div>
-                <div class="setting-text">
-                  <div class="setting-title">Face ID / Touch ID</div>
-                  <div class="setting-description">Manage your device security</div>
-                </div>
-              </div>
-              <div class="toggle-switch">
-                <div class="toggle-knob"></div>
-              </div>
-            </div>
-            
-            <!-- Change Password -->
-            <div class="setting-item">
-              <div class="setting-left">
-                <a href="update-password.html">
-                <div class="setting-icon circle">
-                  
-                  <img src="/assets/svgs/change.svg" class="change-icon"> 
-                </div>
-                <div class="setting-text">
-                 
-                  <div class="setting-title">Change Password</div>
-                  <div class="setting-description">Change your password</div>
-                </a>
-                </div>
-              </div>
-              <img src="/assets/svgs/right chevron.svg" class="arrow-icon" alt="Right arrow" />
-            </div>
-            
-            
-            <!-- Log out -->
-            <div class="setting-item">
-              <div class="setting-left">
-                <div class="setting-icon circle">
-                  <img src="/assets/svgs/Logout.svg" class="logout-icon"> 
-                </div>
-                <div class="setting-text">
-                  <div class="setting-title">Log out</div>
-                  <div class="setting-description">Further secure your account for safety</div>
-                </div>
-              </div>
-              <img src="/assets/svgs/right chevron.svg" class="arrow-icon" alt="Right arrow" />
-            </div>
-            
-          </div>
-        </div>
-        <div class="more-label">More</div>
-      </section>
-      
-      <!-- More Options Section -->
-      <div class="more-options">
-        <div class="options-container">
-          <!-- Help & Support -->
-          <div class="setting-item">
-            <div class="setting-left">
-              <div class="setting-icon circle">
-                <img src="/assets/svgs/Notification.svg" class="notifiction-icon"> 
-              </div>
-              <div class="setting-text">
-            
-                <div class="setting-title">Help & Support</div>
-              </div>
-            </div>
-            <img src="/assets/svgs/right chevron.svg" class="arrow-icon" alt="Right arrow" />
-          </div>
-          
-          <!-- About App -->
-          <div class="setting-item">
-            <div class="setting-left">
-              <div class="setting-icon circle">
-                <img src="/assets/svgs/Heart.svg" class="heart-icon"> 
-              </div>
-              <div class="setting-text">
-                <div class="setting-title">About App</div>
-              </div>
-            </div>
-            <img src="/assets/svgs/right chevron.svg" class="arrow-icon" alt="Right arrow" />
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/assets/css/profile.css">
+  </head>
+  <body>
+    <nav class="navbar_wrapper">
+      <div class="navbar">
+        <img src="/assets/svgs/outline/home.svg" alt="Home Icon" id="home">
+        <img
+          src="/assets/svgs/outline/magnifying-glass.svg"
+          alt="Search Icon"
+          id="magnifying-glass"
+        >
+        <img src="/assets/svgs/outline/map.svg" alt="Map Icon" id="map">
+        <img
+          src="/assets/svgs/outline/bell.svg"
+          alt="Notifications Icon"
+          id="bell"
+        >
+        <img
+          src="/assets/svgs/solid/user-circle.svg"
+          alt="Profile Icon"
+          id="user-circle"
+        >
       </div>
-      
-      <!-- Navigation Bar -->
-      <nav class="navigation-bar">
-        <div class="nav-buttons">
-          <button class="nav-button" aria-label="Home">
-            <img src="/assets/svgs/outline/home.svg" class="nav-icon" alt="Home icon" />
+    </nav>
+    <div class="container">
+      <main class="profile-container">
+        <!-- Profile Header -->
+        <header class="profile-header">
+          <div class="header-content">
+            <div class="header-title">
+              <h1>Profile</h1>
+            </div>
+          </div>
+        </header>
+
+        <!-- User Profile Section -->
+        <section class="user-profile">
+          <div class="user-info">
+            <div class="avatar-container">
+              <img
+                src="/assets/svgs/solid/user-circle.svg"
+                class="avatar-bg"
+                alt="Profile background"
+              />
+            </div>
+            <div class="user-details">
+              <div class="user-name">Sumit Shrestha</div>
+              <div class="user-email">Shrestha.sumit13@gmail.com</div>
+            </div>
+          </div>
+          <button class="edit-button" aria-label="Edit profile">
+            <a href="update-profile.html"><img
+                src="/assets/svgs/edit icon.svg"
+                class="edit-icon"
+                alt="Edit profile"
+              >
+            </a>
           </button>
-          <button class="nav-button" aria-label="Search">
-            <img src="/assets/svgs/outline/magnifying-glass.svg" class="nav-icon" alt="Search icon" />
-          </button>
-          <button class="nav-button" aria-label="Add">
-            <img src="/assets/svgs/outline/map.svg" class="nav-icon" alt="Add icon" />
-          </button>
-          <button class="nav-button" aria-label="Notifications">
-            <img src="/assets/svgs/outline/bell.svg" class="nav-icon" alt="Notifications icon" />
-          </button>
-          <button class="nav-button active" aria-label="Profile">
-            <img src="/assets/svgs/solid/user-circle.svg" class="nav-icon" alt="Profile icon" />
-          </button>
+        </section>
+
+        <!-- Account Settings Section -->
+        <section class="account-settings">
+          <div class="settings-container">
+            <div class="settings-list">
+              <!-- My Account -->
+              <div class="setting-item">
+                <div class="setting-left">
+                  <div class="setting-icon circle">
+                    <img src="/assets/svgs/profile1.svg" class="profile-icon">
+                  </div>
+                  <div class="setting-text">
+                    <div class="setting-title">My Account</div>
+                    <div class="setting-description">
+                      Make changes to your account
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="/assets/svgs/right chevron.svg"
+                  class="arrow-icon"
+                  alt="Right arrow"
+                />
+              </div>
+
+              <!-- Face ID / Touch ID -->
+              <div class="setting-item">
+                <div class="setting-left">
+                  <div class="setting-icon circle">
+                    <img src="/assets/svgs/Lock.svg" class="lock-icon">
+                  </div>
+                  <div class="setting-text">
+                    <div class="setting-title">Face ID / Touch ID</div>
+                    <div class="setting-description">
+                      Manage your device security
+                    </div>
+                  </div>
+                </div>
+                <div class="toggle-switch">
+                  <div class="toggle-knob"></div>
+                </div>
+              </div>
+
+              <!-- Change Password -->
+              <div class="setting-item">
+                <a href="update-password.html">
+                  <div class="setting-left">
+                    <div class="setting-icon circle">
+                      <img src="/assets/svgs/change.svg" class="change-icon">
+                    </div>
+                    <div class="setting-text">
+                      <div class="setting-title">Change Password</div>
+                      <div class="setting-description">
+                        Change your password
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <img
+                  src="/assets/svgs/right chevron.svg"
+                  class="arrow-icon"
+                  alt="Right arrow"
+                />
+              </div>
+
+              <!-- Log out -->
+              <div class="setting-item">
+                <div class="setting-left">
+                  <div class="setting-icon circle">
+                    <img src="/assets/svgs/Logout.svg" class="logout-icon">
+                  </div>
+                  <div class="setting-text">
+                    <div class="setting-title">Log out</div>
+                    <div class="setting-description">
+                      Further secure your account for safety
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="/assets/svgs/right chevron.svg"
+                  class="arrow-icon"
+                  alt="Right arrow"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="more-label">More</div>
+        </section>
+
+        <!-- More Options Section -->
+        <div class="more-options">
+          <div class="options-container">
+            <!-- Help & Support -->
+            <div class="setting-item">
+              <div class="setting-left">
+                <div class="setting-icon circle">
+                  <img
+                    src="/assets/svgs/Notification.svg"
+                    class="notifiction-icon"
+                  >
+                </div>
+                <div class="setting-text">
+                  <div class="setting-title">Help & Support</div>
+                </div>
+              </div>
+              <img
+                src="/assets/svgs/right chevron.svg"
+                class="arrow-icon"
+                alt="Right arrow"
+              />
+            </div>
+
+            <!-- About App -->
+            <div class="setting-item">
+              <div class="setting-left">
+                <div class="setting-icon circle">
+                  <img src="/assets/svgs/Heart.svg" class="heart-icon">
+                </div>
+                <div class="setting-text">
+                  <div class="setting-title">About App</div>
+                </div>
+              </div>
+              <img
+                src="/assets/svgs/right chevron.svg"
+                class="arrow-icon"
+                alt="Right arrow"
+              />
+            </div>
+          </div>
         </div>
-        
-      </nav>
-    </main>
-  </div>
-</body>
+      </main>
+    </div>
+
+    <script src="/index.js" defer></script>
+  </body>
 </html>
