@@ -128,42 +128,71 @@
                 </div>
 
                 <div class="tabs">
-                    <a href="#" class="tab active">Overview</a>
+                    <a href="/pages/station.html" class="tab">Overview</a>
                     <a href="/pages/reviews.html" class="tab">Reviews</a>
-                    <a href="/pages/about.html" class="tab">About</a>
+                    <a href="#" class="tab active">About</a>
                 </div>
+            </section>
 
-                <div
-                    class="flex"
-                    style="flex-direction: column; gap: 1rem; margin: 1rem 0"
-                >
-                    <div class="flex header">
-                        <p style="font-size: small">
-                            Charging Speed &gt; <span
-                                style="color: var(--primary)"
-                            >Fast</span>
-                        </p>
-                        <p style="font-size: small">
-                            5 Ports ~ <span style="color: var(--primary)"
-                            >3/5 Available &#709;</span>
-                        </p>
-                    </div>
-                    <div class="flex header">
-                        <p style="font-size: small">
-                            Payment Methods &gt;
-                            <span style="color: var(--primary)">
-                                Cash, FonePay, ConnectIPS, eSewa
-                            </span>
-                        </p>
-                    </div>
-                    <div class="flex header">
-                        <div class="flex header" style="gap: 0.5rem">
+            <section class="container">
+                <div class="flex" style="flex-direction: column; gap: 1rem">
+                    <div class="flex space-between items-center">
+                        <div class="flex items-center" style="gap: 0.4rem">
                             <img
-                                src="/assets/svgs/solid/pin.svg"
-                                alt="location"
+                                src="/assets/svgs/outline/map-pin.svg"
+                                alt="Location"
+                                width="24px"
                             >
+                            <p style="font-weight: bold">Location</p>
+                        </div>
+                        <div>
                             <p style="font-size: small">
                                 Kathmandu Pulchowk Gabahal Rd, Lalitpur
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex space-between items-center">
+                        <div class="flex items-center" style="gap: 0.4rem">
+                            <img
+                                src="/assets/svgs/outline/square-p.svg"
+                                alt="Location"
+                                width="24px"
+                            >
+                            <p style="font-weight: bold">Parking</p>
+                        </div>
+                        <div>
+                            <p style="font-size: small">
+                                Free
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex space-between items-center">
+                        <div class="flex items-center" style="gap: 0.4rem">
+                            <img
+                                src="/assets/svgs/outline/phone.svg"
+                                alt="Location"
+                                width="24px"
+                            >
+                            <p style="font-weight: bold">Phone</p>
+                        </div>
+                        <div>
+                            <p style="font-size: small">
+                                01-1234567
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex space-between items-center">
+                        <div class="flex items-center" style="gap: 0.4rem">
+                            <img
+                                src="/assets/svgs/outline/lock.svg"
+                                alt="Location"
+                                width="24px"
+                            >
+                            <p style="font-weight: bold">Safety & Security</p>
+                        </div>
+                        <div>
+                            <p style="font-size: small">
+                                CCTV, Security Personnel
                             </p>
                         </div>
                     </div>
@@ -172,11 +201,17 @@
 
             <section class="flex space-around">
                 <button
-                    class="primary button"
+                    class="accent button"
                     style="width: 50%"
-                    onclick="window.location.href = '/pages/book_form.html'"
+                    onclick="alert('Contact the station for more information')"
                 >
-                    Book now
+                    <img
+                        src="/assets/svgs/outline/phone.svg"
+                        alt=""
+                        srcset=""
+                        width="16px"
+                    >
+                    Contact
                 </button>
             </section>
         </main>
